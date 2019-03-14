@@ -7,6 +7,8 @@ Setup of essential tools to install after formatting my mac
 - **iTerm2** : Better terminal 
 - **HomeBrew** : For installing stuff
 - [Atom](https://atom.io/) — My editor of choice ``` brew cask install atom ```
+- Packages:
+- Highlight Selected
 
 
 # Make the terminal pretty
