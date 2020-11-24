@@ -1,15 +1,6 @@
 # New Mac Setup
 Setup of essential tools to install after formatting my mac
 
-# Mac Tools
-
-- **Spectacle** : Managing windows 👓
-- **iTerm2** : Better terminal 
-- **HomeBrew** : For installing stuff
-- [Atom](https://atom.io/) — My editor of choice ``` brew cask install atom ```
-- Packages:
-- Highlight Selected
-
 # Tutorial
 1. Install [HomeBrew](https://brew.sh) first, then use homebrew to install everything else.
 ```
@@ -34,6 +25,11 @@ brew cask install 1password
 - VSCode 
 ``` 
 brew cask install visual-studio-code
+``` 
+
+- [Atom](https://atom.io/)
+``` 
+brew cask install atom 
 ``` 
 
 - Atom 
@@ -63,9 +59,40 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 ``` 
 
+- Use the included history-autocomplete: `cmd + ;` 
 
-- [Cascaria Font ( patched from Nerd Fonts)](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/CascadiaCode/complete/Caskaydia%20Cove%20Regular%20Nerd%20Font%20Complete.ttf)
+- Improve iTerm looks
+```
+Settings -> Appearance -> Theme: Minimal 
+``` 
 
-# Make the terminal pretty
+- Improve iTerm word travel 
+``` 
+Settings -> Profile -> Keys
+```
+`option + <-` - Travel back a word - Send text with Vim characters: \033b
+`option + ->` - Travel forward a word - Send text with Vim characters: \033f
+`option + del` - Delete a word - Send hex code: 0x1B 0x08
+`cmd + del` - Delete line - Send hex code: 
+
+- Change the font to Menlo (available by default)
+```
+Preferences -> Profile -> Text -> Font: Menlo
+``` 
+
+- But I prefer Install Hack Font from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
+``` 
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+``` 
+
+Worthy mention fonts:
+- Fira Code 
+- Source Code Pro
+- Cascadia 
+
+
+# Sources
 - [I like this](https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961)
-- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
+- https://medium.com/better-programming/setting-up-your-mac-for-web-development-in-2020-659f5588b883#3ead
+- https://dev.to/v3frankie/setup-your-mac-for-development-2020-edition-1c8a
