@@ -49,6 +49,12 @@ open ~/.zshrc
 ZSH_THEME="theunraveler"
 ``` 
 
+- Set the awesome color scheme by the [Clovis](http://www.clovis.pro) team
+``` 
+  Download the .itermcolors file from:   https://github.com/Clovis-team/clovis-open-code-extracts/tree/master/utils
+  Preferences -> Profile -> Colors -> Import 
+```
+
 - Setup [ZSH suggestions](https://github.com/zsh-users/zsh-autosuggestions)
 ```
 brew install zsh-autosuggestions
