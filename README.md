@@ -90,6 +90,7 @@ Preferences -> Profile -> Text -> Font: Menlo
 ``` 
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
+brew untap homebrew/cask-fonts
 ``` 
 
 Worthy mention fonts:
@@ -97,8 +98,31 @@ Worthy mention fonts:
 - Source Code Pro
 - Cascadia 
 
+Remove the `last login` line on top of iterm:
+``` 
+cd ~ ; touch .hushlogin
+``` 
+
+# Ruby Enviroment 
+
+I recently started using `ruby-install` and `chruby` instead of `rbenv`.
+It's lightweight and seems simpler to use
+```
+brew install ruby-install
+brew install chruby
+# Follow post install comments to enable auto-switching 
+``` 
+
 
 # Sources
-- [I like this](https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961)
+General setup and terminal:
+- (I like this) https://medium.com/@Clovis_app/configuration-of-a-beautiful-efficient-terminal-and-prompt-on-osx-in-7-minutes-827c29391961
 - https://medium.com/better-programming/setting-up-your-mac-for-web-development-in-2020-659f5588b883#3ead
 - https://dev.to/v3frankie/setup-your-mac-for-development-2020-edition-1c8a
+- https://github.com/bootcoder/ENV_Scratch_Setup#dotfiles
+
+Ruby env:
+- https://stackoverflow.com/questions/51126403/you-dont-have-write-permissions-for-the-library-ruby-gems-2-3-0-directory-ma
+- https://stevemarshall.com/journal/why-i-use-chruby/
+- https://www.moncefbelyamani.com/the-definitive-guide-to-installing-ruby-gems-on-a-mac/
+- https://github.com/monfresh/install-ruby-on-macos
