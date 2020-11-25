@@ -60,7 +60,10 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 ``` 
 
-- Remember to use the included iTerm2 history-autocomplete: `cmd + ;` 
+- Remember to use the included iTerm2 history-autocomplete: 
+```
+cmd + ;
+```
 
 - Improve iTerm window looks
 ```
@@ -71,11 +74,13 @@ Settings -> Appearance -> Theme: Minimal
 ``` 
 Settings -> Profile -> Keys
 ```
-
-`option + <-` - Travel back a word - Send text with Vim characters: \033b
-`option + ->` - Travel forward a word - Send text with Vim characters: \033f
-`option + del` - Delete a word - Send hex code: 0x1B 0x08
-`cmd + del` - Delete line - Send hex code: 
+- Then setup the following
+```
+" ⌥ + ← " - Travel back a word - Send text with Vim characters: \033b
+" ⌥ + → " - Travel forward a word - Send text with Vim characters: \033f
+" ⌥ + del " - Delete a word - Send hex code: 0x1B 0x08
+" ⌘ + del " - Delete line - Send hex code: 0x15
+```
 
 - Change the font to Menlo (available by default)
 ```
