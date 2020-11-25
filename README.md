@@ -2,12 +2,12 @@
 Setup of essential tools to install after formatting your mac 
 
 # Basic things tutorial
-1. Install [HomeBrew](https://brew.sh) first, then use homebrew to install everything else.
+- Install [HomeBrew](https://brew.sh) first, then use homebrew to install everything else.
 ```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ``` 
 
-- [Iterm2](https://iterm2.com)
+- [Iterm2](https://iterm2.com) for a better terminal
 ```
 brew cask install iterm2
 ``` 
@@ -22,12 +22,12 @@ brew cask install spectacle
 brew cask install 1password
 ```
 
-- VSCode 
+- [VSCode](https://code.visualstudio.com) as an editor
 ``` 
 brew cask install visual-studio-code
 ``` 
 
-- [Atom](https://atom.io/)
+- [Atom](https://atom.io/) another editor 
 ``` 
 brew cask install atom 
 ``` 
@@ -94,10 +94,12 @@ brew cask install font-hack-nerd-font
 brew untap homebrew/cask-fonts
 ``` 
 
-Worthy mention fonts:
+- Other worthy mention fonts:
+```
 - Fira Code 
 - Source Code Pro
 - Cascadia 
+```
 
 Remove the `last login` line on top of iterm:
 ``` 
@@ -107,7 +109,7 @@ cd ~ ; touch .hushlogin
 # Ruby Enviroment 
 
 I recently started using `ruby-install` and `chruby` instead of `rbenv`.
-It's lightweight and seems simpler to use
+It's a lightweight solution and seems simpler to use:
 ```
 brew install ruby-install
 brew install chruby
@@ -118,7 +120,7 @@ Then install the latest stable ruby:
 ruby-install ruby 
 ``` 
 
-And enable chruby to set that as default, and change the version according to .ruby-version file on the folder. 
+And enable chruby to set that version as default, and change the version according to .ruby-version file on a folder. 
 To do so, append to your .zshrc:
 ```
 source /usr/local/opt/chruby/share/chruby/chruby.sh
